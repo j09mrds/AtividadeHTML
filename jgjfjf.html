@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="TEXTO" onclick="getTexto()">Texto</p>
+        comi pipoca com sal 
+    </p>
+    <script> 
+       function getTexto(){
+         const paragrafo= document.getElementById("TEXTO");
+         alert(paragrafo.textContent);
+         paragrafo.textContent = "Texto modificado";
+         alert(paragrafo.textContent);
+         paragrafo.innerHTML = "<strong> novo texto em negrito"
+         paragrafo.style.color= "brown";
+         paragrafo.style.backgroundColor= "pink";
+    }
+        </script>
+</body>
+</html>

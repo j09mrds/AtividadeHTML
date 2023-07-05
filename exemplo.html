@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const minhaPromise = new Promise((resolve,reject) => {
+            //Simulando uma operação assincrona
+            setTimeout(() => {
+                const sucesso = true;
+
+                if(sucesso){
+                    resolve("Operação concluida com sucesso!");
+                } else{
+                    reject(new Error("Ocorreu um erro na operação."));
+                }
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
